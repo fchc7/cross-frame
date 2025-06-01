@@ -1,7 +1,7 @@
 // 多窗口隔离示例
 // 注意：这是示例代码，实际使用时应从npm包导入
 
-import { createBridge } from "cross-frame";
+// import { createBridge } from "iframe-connect";
 
 /**
  * 场景模拟：

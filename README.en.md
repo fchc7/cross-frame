@@ -1,4 +1,4 @@
-# cross-frame
+# iframe-connect
 
 A lightweight, type-safe cross-frame communication library.
 
@@ -14,7 +14,7 @@ A lightweight, type-safe cross-frame communication library.
 ## Installation
 
 ```bash
-npm install cross-frame
+npm install iframe-connect
 ```
 
 ## Basic Usage
@@ -22,7 +22,7 @@ npm install cross-frame
 ### Simple API
 
 ```typescript
-import { createBridge } from "cross-frame";
+import { createBridge } from "iframe-connect";
 
 // Auto-detect environment (parent window or child window)
 const bridge = createBridge(iframe); // Provide iframe in parent window
@@ -45,7 +45,7 @@ bridge.on("notification", (payload) => {
 ### With Plugins
 
 ```typescript
-import { createBridge } from "cross-frame";
+import { createBridge } from "iframe-connect";
 
 const bridge = createBridge(iframe, {
   // Basic configuration

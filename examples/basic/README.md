@@ -1,6 +1,6 @@
 # 基础通信示例
 
-这个示例演示了 cross-frame 库的基本功能，包括父窗口和 iframe 之间的双向通信。
+这个示例演示了 iframe-connect 库的基本功能，包括父窗口和 iframe 之间的双向通信。
 
 ## 功能展示
 
@@ -27,7 +27,7 @@
 ### 父窗口
 
 ```javascript
-import { createBridge } from "cross-frame";
+import { createBridge } from "iframe-connect";
 
 const iframe = document.getElementById("childFrame");
 const bridge = createBridge(iframe, {
@@ -51,7 +51,7 @@ bridge.on("childReady", (data) => {
 ### 子窗口(iframe)
 
 ```javascript
-import { createBridge } from "cross-frame";
+import { createBridge } from "iframe-connect";
 
 const bridge = createBridge(null, {
   targetOrigin: "*",

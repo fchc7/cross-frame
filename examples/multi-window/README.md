@@ -1,11 +1,11 @@
 # 多窗口隔离示例
 
-在复杂环境（如 Electron 应用、多个 iframe 等）下，不同窗口之间的消息可能会产生串扰。cross-frame 提供了内置的多窗口隔离机制，只需简单配置即可激活。
+在复杂环境（如 Electron 应用、多个 iframe 等）下，不同窗口之间的消息可能会产生串扰。iframe-connect 提供了内置的多窗口隔离机制，只需简单配置即可激活。
 
 ## 多窗口隔离
 
 ```javascript
-import { createBridge } from "cross-frame";
+import { createBridge } from "iframe-connect";
 
 // 主窗口 A 创建的桥梁
 const bridgeA = createBridge(iframeA, {

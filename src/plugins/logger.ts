@@ -1,6 +1,6 @@
 /**
+ * 为 iframe-connect 提供详细的日志记录功能
  * 日志插件
- * 为 cross-frame 提供详细的日志记录功能
  */
 
 import type { IframeBridge } from "../base-bridge";

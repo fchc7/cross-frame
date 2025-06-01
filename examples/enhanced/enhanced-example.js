@@ -1,10 +1,10 @@
 // 增强功能示例
 // 注意：这是示例代码，实际使用时应从npm包导入
 
-import { createBridge } from "cross-frame";
+// import { createBridge } from "iframe-connect";
 
 /**
- * 本示例展示cross-frame的高级功能和优化
+ * 本示例展示iframe-connect的高级功能和优化
  * 1. 超时优化
  * 2. 队列管理
  * 3. 插件组合使用

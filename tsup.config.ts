@@ -18,7 +18,7 @@ export default defineConfig({
   external: [],
   esbuildOptions(options) {
     options.banner = {
-      js: "/* cross-frame v1.0.0 | MIT License */",
+      js: "/* iframe-connect v1.0.0 | MIT License */",
     };
   },
 });

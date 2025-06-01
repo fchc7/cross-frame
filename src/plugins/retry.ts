@@ -1,6 +1,6 @@
 /**
  * 重试插件
- * 为 cross-frame 提供自动重试功能
+ * 为 iframe-connect 提供自动重试功能
  */
 
 import type { IframeBridge } from "../base-bridge";

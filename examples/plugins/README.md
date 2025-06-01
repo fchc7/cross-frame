@@ -1,6 +1,6 @@
 # 插件系统示例
 
-cross-frame 提供了灵活的插件系统，可以扩展基本功能，满足更复杂的通信需求。
+iframe-connect 提供了灵活的插件系统，可以扩展基本功能，满足更复杂的通信需求。
 
 ## 可用插件
 
@@ -9,7 +9,7 @@ cross-frame 提供了灵活的插件系统，可以扩展基本功能，满足�
 提供详细的消息日志记录，支持不同日志级别和颜色：
 
 ```javascript
-import { createBridge } from "cross-frame";
+import { createBridge } from "iframe-connect";
 
 const bridge = createBridge(iframe, {
   plugins: {
@@ -32,7 +32,7 @@ bridge.send("hello", { message: "世界" });
 自动为请求添加重试功能，特别适合不稳定网络环境：
 
 ```javascript
-import { createBridge } from "cross-frame";
+import { createBridge } from "iframe-connect";
 
 const bridge = createBridge(iframe, {
   plugins: {
@@ -60,7 +60,7 @@ try {
 提供消息队列管理，支持批量处理和优先级：
 
 ```javascript
-import { createBridge } from "cross-frame";
+import { createBridge } from "iframe-connect";
 
 const bridge = createBridge(iframe, {
   plugins: {
@@ -92,7 +92,7 @@ if (queuePlugin) {
 插件可以组合使用，创建功能强大的通信系统：
 
 ```javascript
-import { createBridge } from "cross-frame";
+import { createBridge } from "iframe-connect";
 
 const bridge = createBridge(iframe, {
   plugins: {
@@ -150,4 +150,4 @@ const myPlugin = createMyPlugin(bridge);
 bridge._plugins = { ...bridge._plugins, myPlugin };
 ```
 
-插件系统让 cross-frame 在保持核心简洁的同时，能够适应各种复杂场景。
+插件系统让 iframe-connect 在保持核心简洁的同时，能够适应各种复杂场景。

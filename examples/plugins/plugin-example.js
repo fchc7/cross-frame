@@ -1,7 +1,7 @@
 // 插件系统示例代码
 // 注意：实际使用时，应从npm包导入
 
-import { createBridge } from "cross-frame";
+// import { createBridge } from "iframe-connect";
 
 // 主窗口中的代码
 document.addEventListener("DOMContentLoaded", () => {

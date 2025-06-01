@@ -1,4 +1,4 @@
-# cross-frame
+# iframe-connect
 
 [English](./README.en.md)
 一个轻量级、类型安全的跨框架通信工具包
@@ -15,7 +15,7 @@
 ## 安装
 
 ```bash
-npm install cross-frame
+npm install iframe-connect
 ```
 
 ## 基本使用
@@ -23,7 +23,7 @@ npm install cross-frame
 ### 简单 API
 
 ```typescript
-import { createBridge } from "cross-frame";
+import { createBridge } from "iframe-connect";
 
 // 自动检测环境（主窗口或子窗口）
 const bridge = createBridge(iframe); // 在主窗口中提供iframe
@@ -46,7 +46,7 @@ bridge.on("notification", (payload) => {
 ### 带插件支持
 
 ```typescript
-import { createBridge } from "cross-frame";
+import { createBridge } from "iframe-connect";
 
 const bridge = createBridge(iframe, {
   // 基础配置

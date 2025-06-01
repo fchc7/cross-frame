@@ -1,11 +1,11 @@
-# TypeScript 类型支持示例
+# TypeScript 类型示例
 
-cross-frame 库提供完整的 TypeScript 类型支持，使用泛型可以获得更好的类型安全性。
+iframe-connect 库提供完整的 TypeScript 类型支持，使用泛型可以获得更好的类型安全性。
 
 ## 基本类型
 
 ```typescript
-import { createBridge } from "cross-frame";
+import { createBridge } from "iframe-connect";
 
 // 基本使用
 const bridge = createBridge(iframe);

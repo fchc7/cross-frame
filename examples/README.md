@@ -1,6 +1,6 @@
-# cross-frame 示例
+# iframe-connect 示例
 
-这个目录包含了多个示例，展示如何使用 cross-frame 库进行跨窗口通信。
+这个目录包含了多个示例，展示如何使用 iframe-connect 库进行跨窗口通信。
 
 ## 示例列表
 
@@ -10,11 +10,11 @@
 
 ### [增强功能](./enhanced)
 
-展示 cross-frame 的增强功能，包括插件系统、超时处理和其他高级特性。
+展示 iframe-connect 的增强功能，包括插件系统、超时处理和其他高级特性。
 
 ### [插件系统](./plugins)
 
-详细介绍如何使用 cross-frame 的插件系统，包括日志、重试和队列管理插件。
+详细介绍如何使用 iframe-connect 的插件系统，包括日志、重试和队列管理插件。
 
 ### [多窗口隔离](./multi-window)
 
@@ -29,8 +29,8 @@
 1. 克隆仓库
 
 ```bash
-git clone https://github.com/yourusername/cross-frame.git
-cd cross-frame
+git clone https://github.com/yourusername/iframe-connect.git
+cd iframe-connect
 ```
 
 2. 安装依赖

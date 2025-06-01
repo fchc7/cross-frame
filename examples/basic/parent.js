@@ -1,10 +1,10 @@
 // 父窗口代码
 // 注意：这是示例代码，实际使用时应从npm包导入
-// import { createBridge } from "cross-frame";
+// import { createBridge } from "iframe-connect";
 
 /**
- * 模拟cross-frame库，仅用于示例
- * 实际使用时应导入真实的库
+ * 模拟iframe-connect库，仅用于示例
+ * 在实际使用中，请使用npm安装包并导入
  */
 const mockBridge = {
   iframe: null,

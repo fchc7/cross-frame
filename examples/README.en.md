@@ -1,6 +1,6 @@
-# cross-frame Examples
+# iframe-connect Examples
 
-This directory contains multiple examples demonstrating how to use the cross-frame library for cross-window communication.
+This directory contains multiple examples demonstrating how to use the iframe-connect library for cross-window communication.
 
 ## Example List
 
@@ -10,11 +10,11 @@ Basic communication between parent window and child window (iframe), showcasing 
 
 ### [Enhanced Features](./enhanced)
 
-Demonstrates enhanced features of cross-frame, including the plugin system, timeout handling, and other advanced features.
+Demonstrates enhanced features of iframe-connect, including the plugin system, timeout handling, and other advanced features.
 
 ### [Plugin System](./plugins)
 
-Detailed introduction on how to use the cross-frame plugin system, including logger, retry, and queue management plugins.
+Detailed introduction on how to use the iframe-connect plugin system, including logger, retry, and queue management plugins.
 
 ### [Multi-Window Isolation](./multi-window)
 
@@ -29,8 +29,8 @@ Demonstrates how to leverage the TypeScript type system for type-safe messaging.
 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/cross-frame.git
-cd cross-frame
+git clone https://github.com/yourusername/iframe-connect.git
+cd iframe-connect
 ```
 
 2. Install dependencies

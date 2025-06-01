@@ -1,5 +1,5 @@
 {
-  "name": "cross-frame",
+  "name": "iframe-connect",
   "version": "1.0.0",
   "description": "A lightweight, type-safe cross-frame communication library with plugin system and multi-window isolation",
   "main": "dist/index.js",
@@ -36,11 +36,12 @@
     "typecheck": "tsc --noEmit",
     "release": "npm version patch && git push --follow-tags",
     "release:minor": "npm version minor && git push --follow-tags",
-    "release:major": "npm version major && git push --follow-tags"
+    "release:major": "npm version major && git push --follow-tags",
+    "test-publish": "npm publish --dry-run"
   },
   "devDependencies": {
-    "@types/node": "^18.0.0",
     "@types/jest": "^29.0.0",
+    "@types/node": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "eslint": "^8.0.0",
@@ -64,10 +65,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fchc7/cross-frame.git"
+    "url": "git+https://github.com/fchc7/iframe-connect.git"
   },
   "bugs": {
-    "url": "https://github.com/fchc7/cross-frame/issues"
+    "url": "https://github.com/fchc7/iframe-connect/issues"
   },
-  "homepage": "https://github.com/fchc7/cross-frame#readme"
+  "homepage": "https://github.com/fchc7/iframe-connect#readme"
 }
