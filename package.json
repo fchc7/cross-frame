@@ -1,7 +1,7 @@
 {
   "name": "cross-frame",
-  "version": "1.1.0",
-  "description": "一个轻量级、类型安全的跨框架通信工具包，支持插件系统和多窗口隔离",
+  "version": "1.0.0",
+  "description": "A lightweight, type-safe cross-frame communication library with plugin system and multi-window isolation",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -20,6 +20,7 @@
   "files": [
     "dist",
     "README.md",
+    "README.en.md",
     "LICENSE"
   ],
   "scripts": {
@@ -59,14 +60,14 @@
     "plugin-system",
     "multi-window"
   ],
-  "author": "Your Name",
+  "author": "jx.zhu@foxmail.com",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/cross-frame.git"
+    "url": "https://github.com/fchc7/cross-frame.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/cross-frame/issues"
+    "url": "https://github.com/fchc7/cross-frame/issues"
   },
-  "homepage": "https://github.com/yourusername/cross-frame#readme"
+  "homepage": "https://github.com/fchc7/cross-frame#readme"
 }
