@@ -1,6 +1,6 @@
 {
   "name": "iframe-connect",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight, type-safe cross-frame communication library with plugin system and multi-window isolation",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
