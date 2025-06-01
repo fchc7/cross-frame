@@ -1,0 +1,33 @@
+# 源代码和配置文件
+src/
+tsconfig.json
+tsup.config.ts
+.eslintrc.js
+
+# 开发工具
+.vscode/
+.idea/
+
+# 测试文件
+__tests__/
+*.test.ts
+*.spec.ts
+coverage/
+
+# 构建工具
+.github/
+examples/
+docs/
+
+# 其他
+*.log
+.env*
+.DS_Store
+Thumbs.db
+
+# 保留这些文件在npm包中:
+# - dist/
+# - package.json
+# - README.md
+# - LICENSE
+# - CHANGELOG.md 

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cross-frame 基本示例 - 子窗口</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 15px;
+        margin: 0;
+        background-color: #f8f9fa;
+      }
+      h1 {
+        color: #333;
+        font-size: 18px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+      }
+      .message-container {
+        background-color: white;
+        border-radius: 4px;
+        padding: 10px;
+        margin-bottom: 15px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+      .message {
+        margin: 5px 0;
+        padding: 5px;
+        border-left: 3px solid #2196f3;
+        background-color: #e3f2fd;
+      }
+      .request {
+        margin: 5px 0;
+        padding: 5px;
+        border-left: 3px solid #ff9800;
+        background-color: #fff3e0;
+      }
+      .error {
+        margin: 5px 0;
+        padding: 5px;
+        border-left: 3px solid #f44336;
+        background-color: #ffebee;
+      }
+      .status {
+        margin-top: 15px;
+        font-weight: bold;
+        color: #4caf50;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>cross-frame 子窗口</h1>
+
+    <div class="status" id="status">准备就绪，等待通信...</div>
+
+    <div class="message-container">
+      <h2>收到的消息</h2>
+      <div id="messageContainer"></div>
+    </div>
+
+    <div class="message-container">
+      <h2>收到的请求</h2>
+      <div id="requestContainer"></div>
+    </div>
+
+    <script type="module" src="child.js"></script>
+  </body>
+</html>
