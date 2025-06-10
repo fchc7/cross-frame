@@ -53,8 +53,19 @@ jobs:
         run: |
           # 从 tag 中提取版本号 (去掉 'v' 前缀)
           TAG_VERSION=${GITHUB_REF#refs/tags/v}
-          # 更新 package.json 中的版本号以匹配 tag
-          npm version $TAG_VERSION --no-git-tag-version
+          echo "Tag version: $TAG_VERSION"
+
+          # 获取当前 package.json 中的版本号
+          PACKAGE_VERSION=$(node -p "require('./package.json').version")
+          echo "Package version: $PACKAGE_VERSION"
+
+          # 只有当版本不同时才更新
+          if [ "$TAG_VERSION" != "$PACKAGE_VERSION" ]; then
+            echo "Updating package.json version from $PACKAGE_VERSION to $TAG_VERSION"
+            npm version $TAG_VERSION --no-git-tag-version
+          else
+            echo "Package.json version already matches tag version, skipping update"
+          fi
 
       - name: 发布到 NPM
         run: npm publish
