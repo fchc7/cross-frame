@@ -165,7 +165,11 @@ export abstract class IframeBridge {
 
     // 如果启用多窗口隔离，检查窗口ID
     if (this.config.enableMultiWindow) {
-      if (!event.data?.windowId || event.data.windowId !== this.windowId) {
+      if (
+        !event.data ||
+        !event.data.windowId ||
+        event.data.windowId !== this.windowId
+      ) {
         if (this.config.debug) {
           this.messageHandler.log("忽略其他窗口消息:", event.data);
         }
@@ -174,13 +178,13 @@ export abstract class IframeBridge {
     }
 
     // 处理响应消息
-    if (event.data?.isResponse) {
+    if (event.data && event.data.isResponse) {
       this.messageHandler.handleResponse(event.data as ResponseMessage);
       return;
     }
 
     // 处理请求消息
-    if (event.data?.needResponse) {
+    if (event.data && event.data.needResponse) {
       this.messageHandler.handleRequest(
         event.data as RequestMessage,
         targetWindow
@@ -189,7 +193,7 @@ export abstract class IframeBridge {
     }
 
     // 处理普通事件消息
-    if (event.data?.type) {
+    if (event.data && event.data.type) {
       const listeners = (this.messageHandler as any).eventListeners.get(
         event.data.type
       );

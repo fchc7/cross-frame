@@ -13,12 +13,7 @@ export default defineConfig({
   minify: false,
   treeshake: true,
   outDir: "dist",
-  target: "es2020",
+  target: "es2017",
   bundle: true,
   external: [],
-  esbuildOptions(options) {
-    options.banner = {
-      js: "/* iframe-connect v1.0.0 | MIT License */",
-    };
-  },
 });
